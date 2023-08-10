@@ -1,11 +1,6 @@
 import cv2
 import numpy as np
 
-# motorbike-table
-scale = 0.8
-h, w = 200,200
-
-
 # motorbike
 img_mtb1 = cv2.imread('classesimg/motorbike/5e7937b7ee66c567ea39021f908fd2a2.jpg')
 img_mtb1 = cv2.resize(img_mtb1, (h, w), None, scale, scale)
@@ -34,12 +29,11 @@ img_mtb8 = cv2.resize(img_mtb8, (h, w), None, scale, scale)
 img_mtb9 = cv2.imread('classesimg/motorbike/f63144d6eb3446608a757d38c95ecfb9.jpg')
 img_mtb9 = cv2.resize(img_mtb9, (h, w), None, scale, scale)
 
-hor = np.hstack((img_mtb1, img_mtb2, img_mtb3,))
-hor2 = np.hstack((img_mtb4, img_mtb5, img_mtb6))
-hor3 = np.hstack((img_mtb7, img_mtb8, img_mtb9))
-ver_mtb = np.vstack((hor, hor2, hor3))
+hormtb = np.hstack((img_mtb1, img_mtb2, img_mtb3,))
+hormtb2 = np.hstack((img_mtb4, img_mtb5, img_mtb6))
+hormtb3 = np.hstack((img_mtb7, img_mtb8, img_mtb9))
+ver_mtb = np.vstack((hormtb, hormtb2, hormtb3))
 
-cv2.imshow("Motorbike", ver_mtb)
 
 # person
 img_psn1 = cv2.imread('classesimg/person/1ffbb585a7fda0b8fc47bc648d1b513c.jpg')
@@ -69,12 +63,11 @@ img_psn8 = cv2.resize(img_psn8, (h, w), None, scale, scale)
 img_psn9 = cv2.imread('classesimg/person/fc9de80da08a4e4f57199ccc16228f2b.jpg')
 img_psn9 = cv2.resize(img_psn9, (h, w), None, scale, scale)
 
-hor = np.hstack((img_psn1, img_psn2, img_psn3,))
-hor2 = np.hstack((img_psn4, img_psn5, img_psn6))
-hor3 = np.hstack((img_psn7, img_psn8, img_psn9))
-ver_psn = np.vstack((hor, hor2, hor3))
+horpsn = np.hstack((img_psn1, img_psn2, img_psn3,))
+horpsn2 = np.hstack((img_psn4, img_psn5, img_psn6))
+horpsn3 = np.hstack((img_psn7, img_psn8, img_psn9))
+ver_psn = np.vstack((horpsn, horpsn2, horpsn3))
 
-cv2.imshow("Person", ver_psn)
 
 # plant
 img_pln1 = cv2.imread('classesimg/plant/5cc8f6b072eb36c67072fa3a6e8a3353.jpg')
@@ -104,12 +97,11 @@ img_pln8 = cv2.resize(img_pln8, (h, w), None, scale, scale)
 img_pln9 = cv2.imread('classesimg/plant/fe3d5922d4108d0aec18d51986a4b215.jpg')
 img_pln9 = cv2.resize(img_pln9, (h, w), None, scale, scale)
 
-hor = np.hstack((img_pln1, img_pln2, img_pln3,))
-hor2 = np.hstack((img_pln4, img_pln5, img_pln6))
-hor3 = np.hstack((img_pln7, img_pln8, img_pln9))
-ver_pln = np.vstack((hor, hor2, hor3))
+horpln = np.hstack((img_pln1, img_pln2, img_pln3,))
+horpln2 = np.hstack((img_pln4, img_pln5, img_pln6))
+horpln3 = np.hstack((img_pln7, img_pln8, img_pln9))
+ver_pln = np.vstack((horpln, horpln2, horpln3))
 
-cv2.imshow("Plant", ver_pln)
 
 # sheep
 img_shp1 = cv2.imread('classesimg/sheep/16eb9503058df6af25014c4017a2655c.jpg')
@@ -139,12 +131,11 @@ img_shp8 = cv2.resize(img_shp8, (h, w), None, scale, scale)
 img_shp9 = cv2.imread('classesimg/sheep/d9eac6f8fd4dbd34fed31349253c08f7.jpg')
 img_shp9 = cv2.resize(img_shp9, (h, w), None, scale, scale)
 
-hor = np.hstack((img_shp1, img_shp2, img_shp3,))
-hor2 = np.hstack((img_shp4, img_shp5, img_shp6))
-hor3 = np.hstack((img_shp7, img_shp8, img_shp9))
-ver_shp = np.vstack((hor, hor2, hor3))
+horshp = np.hstack((img_shp1, img_shp2, img_shp3,))
+horshp2 = np.hstack((img_shp4, img_shp5, img_shp6))
+horshp3 = np.hstack((img_shp7, img_shp8, img_shp9))
+ver_shp = np.vstack((horshp, horshp2, horshp3))
 
-cv2.imshow("Sheep", ver_shp)
 
 # sofa
 img_sofa1 = cv2.imread('classesimg/sofa/0b7bed3709399ae80b17a5c6b6e2647c.jpg')
@@ -174,12 +165,11 @@ img_sofa8 = cv2.resize(img_sofa8, (h, w), None, scale, scale)
 img_sofa9 = cv2.imread('classesimg/sofa/ba517bdcd7849a820cc3a8b9fff1c06e.jpg')
 img_sofa9 = cv2.resize(img_sofa9, (h, w), None, scale, scale)
 
-hor = np.hstack((img_sofa1, img_sofa2, img_sofa3,))
-hor2 = np.hstack((img_sofa4, img_sofa5, img_sofa6))
-hor3 = np.hstack((img_sofa7, img_sofa8, img_sofa9))
-ver_sofa = np.vstack((hor, hor2, hor3))
+horsofa = np.hstack((img_sofa1, img_sofa2, img_sofa3,))
+horsofa2 = np.hstack((img_sofa4, img_sofa5, img_sofa6))
+horsofa3 = np.hstack((img_sofa7, img_sofa8, img_sofa9))
+ver_sofa = np.vstack((horsofa, horsofa2, horsofa3))
 
-cv2.imshow("Sofa", ver_sofa)
 
 # table
 img_tab1 = cv2.imread('classesimg/table/4a024774eeb75e6adb8a65737f7cc03e.jpg')
@@ -209,9 +199,10 @@ img_tab8 = cv2.resize(img_tab8, (h, w), None, scale, scale)
 img_tab9 = cv2.imread('classesimg/table/c4654888459cff672e0053d73b49cdec.jpg')
 img_tab9 = cv2.resize(img_tab9, (h, w), None, scale, scale)
 
-hor = np.hstack((img_tab1, img_tab2, img_tab3,))
-hor2 = np.hstack((img_tab4, img_tab5, img_tab6))
-hor3 = np.hstack((img_tab7, img_tab8, img_tab9))
-ver_tab = np.vstack((hor, hor2, hor3))
+hortab = np.hstack((img_tab1, img_tab2, img_tab3,))
+hortab2 = np.hstack((img_tab4, img_tab5, img_tab6))
+hortab3 = np.hstack((img_tab7, img_tab8, img_tab9))
+ver_tab = np.vstack((hortab, hortab2, hortab3))
 
 cv2.imshow("Table", ver_tab)
+cv2.waitKey()
