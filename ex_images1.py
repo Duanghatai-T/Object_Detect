@@ -34,47 +34,45 @@ img_aero8 = cv2.resize(img_aero8, (h, w), None, scale, scale)
 img_aero9 = cv2.imread('classesimg/aeroplane/pexels-pascal-borener-1089306.jpg')
 img_aero9 = cv2.resize(img_aero9, (h, w), None, scale, scale)
 
-hor = np.hstack((img_aero1, img_aero2, img_aero3,))
-hor2 = np.hstack((img_aero4, img_aero5, img_aero6))
-hor3 = np.hstack((img_aero7, img_aero8, img_aero9))
-ver_aero = np.vstack((hor, hor2, hor3))
+horaero = np.hstack((img_aero1, img_aero2, img_aero3,))
+horaero2 = np.hstack((img_aero4, img_aero5, img_aero6))
+horaero3 = np.hstack((img_aero7, img_aero8, img_aero9))
+ver_aero = np.vstack((horaero, horaero2, horaero3))
 
-cv2.imshow("Aeroplane",ver_aero)
 
 # bicycle
-img_bi1 = cv2.imread('classesimg/bicycle/07b21fb0fc34308d92e2d643e69db860.jpg')
-img_bi1 = cv2.resize(img_bi1, (h, w), None, scale, scale)
+img_bic1 = cv2.imread('classesimg/bicycle/07b21fb0fc34308d92e2d643e69db860.jpg')
+img_bic1 = cv2.resize(img_bic1, (h, w), None, scale, scale)
 
-img_bi2 = cv2.imread('classesimg/bicycle/26dc426a933e1357b7a47f5056f4a09d.jpg')
-img_bi12 = cv2.resize(img_bi2, (h, w), None, scale, scale)
+img_bic2 = cv2.imread('classesimg/bicycle/26dc426a933e1357b7a47f5056f4a09d.jpg')
+img_bic2 = cv2.resize(img_bic2, (h, w), None, scale, scale)
 
-img_bi3 = cv2.imread('classesimg/bicycle/596ff49ab42a023392c4c0a0beb7f961.jpg')
-img_bi3 = cv2.resize(img_bi3, (h, w), None, scale, scale)
+img_bic3 = cv2.imread('classesimg/bicycle/596ff49ab42a023392c4c0a0beb7f961.jpg')
+img_bic3 = cv2.resize(img_bic3, (h, w), None, scale, scale)
 
-img_bi4 = cv2.imread('classesimg/bicycle/845015e355b1c8bb3e7756fe1f666e1d.jpg')
-img_bi4 = cv2.resize(img_bi4, (h, w), None, scale, scale)
+img_bic4 = cv2.imread('classesimg/bicycle/845015e355b1c8bb3e7756fe1f666e1d.jpg')
+img_bic4 = cv2.resize(img_bic4, (h, w), None, scale, scale)
 
-img_bi5 = cv2.imread('classesimg/bicycle/a53e9f71b0549ac89cdebea2ef76c5ca.jpg')
-img_bi5 = cv2.resize(img_bi5, (h, w), None, scale, scale)
+img_bic5 = cv2.imread('classesimg/bicycle/a53e9f71b0549ac89cdebea2ef76c5ca.jpg')
+img_bic5 = cv2.resize(img_bic5, (h, w), None, scale, scale)
 
-img_bi6 = cv2.imread('classesimg/bicycle/c371bab1df4df2e2f36885eb647aad9d.jpg')
-img_bi6 = cv2.resize(img_bi6, (h, w), None, scale, scale)
+img_bic6 = cv2.imread('classesimg/bicycle/c371bab1df4df2e2f36885eb647aad9d.jpg')
+img_bic6 = cv2.resize(img_bic6, (h, w), None, scale, scale)
 
-img_bi7 = cv2.imread('classesimg/bicycle/c54213380160952192d11b4f8af25701.jpg')
-img_bi7 = cv2.resize(img_bi7, (h, w), None, scale, scale)
+img_bic7 = cv2.imread('classesimg/bicycle/c54213380160952192d11b4f8af25701.jpg')
+img_bic7 = cv2.resize(img_bic7, (h, w), None, scale, scale)
 
-img_bi8 = cv2.imread('classesimg/bicycle/f6591f2f287899dc2bdb3b8724943b65.jpg')
-img_bi8 = cv2.resize(img_bi8, (h, w), None, scale, scale)
+img_bic8 = cv2.imread('classesimg/bicycle/f6591f2f287899dc2bdb3b8724943b65.jpg')
+img_bic8 = cv2.resize(img_bic8, (h, w), None, scale, scale)
 
-img_bi9 = cv2.imread('classesimg/bicycle/fa577f1cf62ed078fb97d213a7567934.jpg')
-img_bi9 = cv2.resize(img_bi9, (h, w), None, scale, scale)
+img_bic9 = cv2.imread('classesimg/bicycle/fa577f1cf62ed078fb97d213a7567934.jpg')
+img_bic9 = cv2.resize(img_bic9, (h, w), None, scale, scale)
 
-hor = np.hstack((img_bi1, img_bi2, img_bi3,))
-hor2 = np.hstack((img_bi4, img_bi5, img_bi6))
-hor3 = np.hstack((img_bi7, img_bi8, img_bi9))
-ver_bi = np.vstack((hor, hor2, hor3))
+horbic = np.hstack((img_bic1, img_bic2, img_bic3,))
+horbic2 = np.hstack((img_bic4, img_bic5, img_bic6))
+horbic3 = np.hstack((img_bic7, img_bic8, img_bic9))
+ver_bic = np.vstack((horbic, horbic2, horbic3))
 
-cv2.imshow("Bicycle",ver_bi)
 
 # bird
 img_bird1 = cv2.imread('classesimg/bird/0eb52f1c6b38ad73d2758201f3a0fe2a.jpg')
@@ -104,12 +102,11 @@ img_bird8 = cv2.resize(img_bird8, (h, w), None, scale, scale)
 img_bird9 = cv2.imread('classesimg/bird/fcc1b0489927b74c932d672f6790cc92.jpg')
 img_bird9 = cv2.resize(img_bird9, (h, w), None, scale, scale)
 
-hor = np.hstack((img_bird1, img_bird2, img_bird3,))
-hor2 = np.hstack((img_bird4, img_bird5, img_bird6))
-hor3 = np.hstack((img_bird7, img_bird8, img_bird9))
-ver_bird = np.vstack((hor, hor2, hor3))
+horbird = np.hstack((img_bird1, img_bird2, img_bird3,))
+horbird2 = np.hstack((img_bird4, img_bird5, img_bird6))
+horbird3 = np.hstack((img_bird7, img_bird8, img_bird9))
+ver_bird = np.vstack((horbird, horbird2, horbird3))
 
-cv2.imshow("Bird", ver_bird)
 
 # boat
 img_bo1 = cv2.imread('classesimg/boat/2bb819a65d9e777680998b35bafa658a.jpg')
@@ -140,12 +137,11 @@ img_bo8 = cv2.resize(img_bo8, (h, w), None, scale, scale)
 img_bo9 = cv2.imread('classesimg/boat/142240c5772d7c22c60f189019a121fa.jpg')
 img_bo9 = cv2.resize(img_bo9, (h, w), None, scale, scale)
 
-hor = np.hstack((img_bo1, img_bo2, img_bo3,))
-hor2 = np.hstack((img_bo4, img_bo5, img_bo6))
-hor3 = np.hstack((img_bo7, img_bo8, img_bo9))
-ver_bo = np.vstack((hor, hor2, hor3))
+horbo = np.hstack((img_bo1, img_bo2, img_bo3,))
+horbo2 = np.hstack((img_bo4, img_bo5, img_bo6))
+horbo3 = np.hstack((img_bo7, img_bo8, img_bo9))
+ver_bo = np.vstack((horbo, horbo2, horbo3))
 
-cv2.imshow("Boat", ver_bo)
 
 # bottle
 img_bot1 = cv2.imread('classesimg/bottle/0b136e890bdf4406f8ff59900c4dc4c4.jpg')
@@ -175,15 +171,13 @@ img_bot8 = cv2.resize(img_bot8, (h, w), None, scale, scale)
 img_bot9 = cv2.imread('classesimg/bottle/e4a89260a46c04a9a8685edb75b07026.jpg')
 img_bot9 = cv2.resize(img_bot9, (h, w), None, scale, scale)
 
-hor = np.hstack((img_bot1, img_bot2, img_bot3,))
-hor2 = np.hstack((img_bot4, img_bot5, img_bot6))
-hor3 = np.hstack((img_bot7, img_bot8, img_bot9))
-ver_bot = np.vstack((hor, hor2, hor3))
+horbot = np.hstack((img_bot1, img_bot2, img_bot3,))
+horbot2 = np.hstack((img_bot4, img_bot5, img_bot6))
+horbot3 = np.hstack((img_bot7, img_bot8, img_bot9))
+ver_bot = np.vstack((horbot, horbot2, horbot3))
 
-cv2.imshow("Boat", ver_bot)
 
 # bus
-
 img_bus1 = cv2.imread('classesimg/bus/5801474820ff96c525584aa1aa11679d.jpg')
 img_bus1 = cv2.resize(img_bus1, (h, w), None, scale, scale)
 
@@ -211,9 +205,10 @@ img_bus8 = cv2.resize(img_bus8, (h, w), None, scale, scale)
 img_bus9 = cv2.imread('classesimg/bus/8823a4b9201b51e1ef2cb9a99c1434df.jpg')
 img_bus9 = cv2.resize(img_bus9, (h, w), None, scale, scale)
 
-hor = np.hstack((img_bus1, img_bus2, img_bus3,))
-hor2 = np.hstack((img_bus4, img_bus5, img_bus6))
-hor3 = np.hstack((img_bus7, img_bus8, img_bus9))
-ver_bus = np.vstack((hor, hor2, hor3))
+horbus = np.hstack((img_bus1, img_bus2, img_bus3,))
+horbus2 = np.hstack((img_bus4, img_bus5, img_bus6))
+horbus3 = np.hstack((img_bus7, img_bus8, img_bus9))
+ver_bus = np.vstack((horbus, horbus2, horbus3))
 
 cv2.imshow("Boat", ver_bus)
+cv2.waitKey(0)
