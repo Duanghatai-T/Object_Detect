@@ -211,4 +211,4 @@ horbus3 = np.hstack((img_bus7, img_bus8, img_bus9))
 ver_bus = np.vstack((horbus, horbus2, horbus3))
 
 cv2.imshow("Boat", ver_bus)
-cv2.waitKey(0)
+cv2.waitKey()
