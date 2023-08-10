@@ -33,16 +33,13 @@ img_car8 = cv2.resize(img_car8, (h, w), None, scale, scale)
 img_car9 = cv2.imread('classesimg/car/d9c1f324bc6a3b8bef2170ef8560a8dd.jpg')
 img_car9 = cv2.resize(img_car9, (h, w), None, scale, scale)
 
-hor = np.hstack((img_car1, img_car2, img_car3,))
-hor2 = np.hstack((img_car4, img_car5, img_car6))
-hor3 = np.hstack((img_car7, img_car8, img_car9))
-ver_car = np.vstack((hor, hor2, hor3))
+horcar = np.hstack((img_car1, img_car2, img_car3,))
+horcar2 = np.hstack((img_car4, img_car5, img_car6))
+horcar3 = np.hstack((img_car7, img_car8, img_car9))
+ver_car = np.vstack((horcar, horcar2, horcar3))
 
-cv2.imshow("Car", ver_car)
 
 # cat
-
-
 img_cat1 = cv2.imread('classesimg/cat/0cb1fadd58cb6cd40b3c37147f467f6b.jpg')
 img_cat1 = cv2.resize(img_cat1, (h, w), None, scale, scale)
 
@@ -70,12 +67,11 @@ img_cat8 = cv2.resize(img_cat8, (h, w), None, scale, scale)
 img_cat9 = cv2.imread('classesimg/cat/f2a1fc70c27557433d62d6b7f7b6b4e6.jpg')
 img_cat9 = cv2.resize(img_cat9, (h, w), None, scale, scale)
 
-hor = np.hstack((img_cat1, img_cat2, img_cat3,))
-hor2 = np.hstack((img_cat4, img_cat5, img_cat6))
-hor3 = np.hstack((img_cat7, img_cat8, img_cat9))
-ver_cat = np.vstack((hor, hor2, hor3))
+horcat = np.hstack((img_cat1, img_cat2, img_cat3,))
+horcat2 = np.hstack((img_cat4, img_cat5, img_cat6))
+horcat3 = np.hstack((img_cat7, img_cat8, img_cat9))
+ver_cat = np.vstack((horcat, horcat2, horcat3))
 
-cv2.imshow("Cat", ver_cat)
 
 # chair
 img_chair1 = cv2.imread('classesimg/chair/6c8f923fd440d8c71a6ab40b1dbe4556.jpg')
@@ -105,12 +101,11 @@ img_chair8 = cv2.resize(img_chair8, (h, w), None, scale, scale)
 img_chair9 = cv2.imread('classesimg/chair/fde4ccc8b5bea141d4387f1ba3b26088.jpg')
 img_chair9 = cv2.resize(img_chair9, (h, w), None, scale, scale)
 
-hor = np.hstack((img_chair1, img_chair2, img_chair3,))
-hor2 = np.hstack((img_chair4, img_chair5, img_chair6))
-hor3 = np.hstack((img_chair7, img_chair8, img_chair9))
-ver_chair = np.vstack((hor, hor2, hor3))
+horchair = np.hstack((img_chair1, img_chair2, img_chair3,))
+horchair2 = np.hstack((img_chair4, img_chair5, img_chair6))
+horchair3 = np.hstack((img_chair7, img_chair8, img_chair9))
+ver_chair = np.vstack((horchair, horchair2, horchair3))
 
-cv2.imshow("Chair", ver_chair)
 
 # cow
 img_cow1 = cv2.imread('classesimg/cow/3d632c45b8cb350b2577fead3c65500f.jpg')
@@ -140,12 +135,11 @@ img_cow8 = cv2.resize(img_cow8, (h, w), None, scale, scale)
 img_cow9 = cv2.imread('classesimg/cow/b7364395f0436795825af2474282b629.jpg')
 img_cow9 = cv2.resize(img_cow9, (h, w), None, scale, scale)
 
-hor = np.hstack((img_cow1, img_cow2, img_cow3,))
-hor2 = np.hstack((img_cow4, img_cow5, img_cow6))
-hor3 = np.hstack((img_cow7, img_cow8, img_cow9))
-ver_cow = np.vstack((hor, hor2, hor3))
+horcow = np.hstack((img_cow1, img_cow2, img_cow3,))
+horcow2 = np.hstack((img_cow4, img_cow5, img_cow6))
+horcow3 = np.hstack((img_cow7, img_cow8, img_cow9))
+ver_cow = np.vstack((horcow, horcow2, horcow3))
 
-cv2.imshow("Cow", ver_cow)
 
 # dog
 img_dog1 = cv2.imread('classesimg/dog/63ff60628078ea38501416cee19b2f65.jpg')
@@ -175,12 +169,11 @@ img_dog8 = cv2.resize(img_dog8, (h, w), None, scale, scale)
 img_dog9 = cv2.imread('classesimg/dog/cf6ef9bddebbb36bdbdb288676051648.jpg')
 img_dog9 = cv2.resize(img_dog9, (h, w), None, scale, scale)
 
-hor = np.hstack((img_dog1, img_dog2, img_dog3,))
-hor2 = np.hstack((img_dog4, img_dog5, img_dog6))
-hor3 = np.hstack((img_dog7, img_dog8, img_dog9))
-ver_dog = np.vstack((hor, hor2, hor3))
+hordog = np.hstack((img_dog1, img_dog2, img_dog3,))
+hordog2 = np.hstack((img_dog4, img_dog5, img_dog6))
+hordog3 = np.hstack((img_dog7, img_dog8, img_dog9))
+ver_dog = np.vstack((hordog, hordog2, hordog3))
 
-cv2.imshow("Dog", ver_dog)
 
 # horse
 img_hos1 = cv2.imread('classesimg/horse/5c32f523f35ee658ddb35383d73a27fc.jpg')
@@ -210,9 +203,10 @@ img_hos8 = cv2.resize(img_hos8, (h, w), None, scale, scale)
 img_hos9 = cv2.imread('classesimg/horse/fc040d4715b4082566b2f83818cb4253.jpg')
 img_hos9 = cv2.resize(img_hos9, (h, w), None, scale, scale)
 
-hor = np.hstack((img_hos1, img_hos2, img_hos3,))
-hor2 = np.hstack((img_hos4, img_hos5, img_hos6))
-hor3 = np.hstack((img_hos7, img_hos8, img_hos9))
-ver_hos = np.vstack((hor, hor2, hor3))
+horhos = np.hstack((img_hos1, img_hos2, img_hos3,))
+horhos2 = np.hstack((img_hos4, img_hos5, img_hos6))
+horhos3 = np.hstack((img_hos7, img_hos8, img_hos9))
+ver_hos = np.vstack((horhos, horhos2, horhos3))
 
 cv2.imshow("Horse", ver_hos)
+cv2.waitKey()
