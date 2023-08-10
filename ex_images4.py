@@ -5,6 +5,10 @@ import numpy as np
 scale = 0.8
 h, w = 200,200
 
+# train-TV
+scale = 0.8
+h, w = 200,200
+
 # train
 img_trn1 = cv2.imread('classesimg/train/2f326ab2a3e987943b3a99bf74019e1e.jpg')
 img_trn1 = cv2.resize(img_trn1, (h, w), None, scale, scale)
@@ -33,12 +37,11 @@ img_trn8 = cv2.resize(img_trn8, (h, w), None, scale, scale)
 img_trn9 = cv2.imread('classesimg/train/ebdba5bb3a4bd2fe86e89106a51317bb.jpg')
 img_trn9 = cv2.resize(img_trn9, (h, w), None, scale, scale)
 
-hor = np.hstack((img_trn1, img_trn2, img_trn3,))
-hor2 = np.hstack((img_trn4, img_trn5, img_trn6))
-hor3 = np.hstack((img_trn7, img_trn8, img_trn9))
-ver_trn = np.vstack((hor, hor2, hor3))
+hortrn = np.hstack((img_trn1, img_trn2, img_trn3,))
+hortrn2 = np.hstack((img_trn4, img_trn5, img_trn6))
+hortrn3 = np.hstack((img_trn7, img_trn8, img_trn9))
+ver_trn = np.vstack((hortrn, hortrn2, hortrn3))
 
-cv2.imshow("Train", ver_trn)
 
 # TV
 img_tvm1 = cv2.imread('classesimg/tvmonitor/23ebdce293f5e329a601c1e1e0b1673e.jpg')
@@ -68,9 +71,10 @@ img_tvm8 = cv2.resize(img_tvm8, (h, w), None, scale, scale)
 img_tvm9 = cv2.imread('classesimg/tvmonitor/f37601ddb7e5daf01cab1c4d01644d5c.jpg')
 img_tvm9 = cv2.resize(img_tvm9, (h, w), None, scale, scale)
 
-hor = np.hstack((img_tvm1, img_tvm2, img_tvm3,))
-hor2 = np.hstack((img_tvm4, img_tvm5, img_tvm6))
-hor3 = np.hstack((img_tvm7, img_tvm8, img_tvm9))
-ver_tvm = np.vstack((hor, hor2, hor3))
+hortvm = np.hstack((img_tvm1, img_tvm2, img_tvm3,))
+hortvm2 = np.hstack((img_tvm4, img_tvm5, img_tvm6))
+hortvm3 = np.hstack((img_tvm7, img_tvm8, img_tvm9))
+ver_tvm = np.vstack((hortvm, hortvm2, hortvm3))
 
 cv2.imshow("TV Monitor", ver_tvm)
+cv2.waitKey()
