@@ -10,7 +10,7 @@ import numpy as np
 # from ex_images2 import ver_cat
 # from ex_images2 import ver_chair
 # from ex_images2 import ver_cow
-# from ex_images2 import ver_tab
+# from ex_images3 import ver_tab
 # from ex_images2 import ver_dog
 # from ex_images2 import ver_hos
 # from ex_images3 import ver_mtb
